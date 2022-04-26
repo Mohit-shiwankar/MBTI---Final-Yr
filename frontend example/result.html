@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>MBTI Text Classifier</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="style.css">
+</head>
+<body id="bg">
+<div class="navbar navbar-static-top">
+    <ul class="nav navbar-nav">
+        <li><h2><a href="{{ url_for('index') }}" id="navvy">MBTI Personality Classifier</a></h2></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+        <li><a href="{{ url_for('about') }}" style="margin-right:25px;font-size:18px;">About</a></li>
+    </ul>
+</div>
+
+<div class="container-fluid">
+    <div class="jumbotron" id="jbg">
+        <label class="text-center" style="font-size:20px;">MBTI personality type prediction:</label>
+        <body class="text-center" style="font-size:20px;">{{ prediction }}</body>
+    </div>
+    <br>
+    <div>
+        <p style="font-size:14px;"> Learn more about <a href="https://www.16personalities.com/personality-types"
+                                                        id="ln">Myer-Briggs Personality Types!</a></p>
+    </div>
+
+    <div class="navbar navbar-fixed-bottom">
+        <p id="footer">
+            Created by
+            <a href="https://github.com/nredick">Nathalie</a>,
+            <a href="https://github.com/elinorpd">Elinor</a>, &
+            <a href="https://github.com/abubakardaud">Abu</a>. October 2020.
+        </p>
+    </div>
+</div>
+</body>
+</html>
